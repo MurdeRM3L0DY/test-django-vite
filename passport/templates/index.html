@@ -1,0 +1,17 @@
+{% load vite %}
+
+{% block content %}
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      {% vite %}
+
+      {% vite 'css/style.css' 'js/main.js' %}
+    </head>
+    <body>
+      <div class="text-red-500 text-xl hover:text-blue-500 m-4 pl-8">
+        I'm Himesis
+      </div>
+    </body>
+  </html>
+{% endblock content %}
